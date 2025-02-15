@@ -1,0 +1,178 @@
+:root {
+    --cuvva-blue: #00a4e9;
+    --cuvva-dark: #1e1c3d;
+}
+
+body {
+    font-family: Helvetica, -apple-system, BlinkMacSystemFont, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    color: var(--cuvva-dark);
+    background-color: #fafafa;
+}
+
+h1 {
+    color: var(--cuvva-dark);
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.input-group.required label::after {
+    content: "*";
+    color: #e53e3e;
+    margin-left: 4px;
+}
+
+.input-group input:invalid {
+    border-color: #e53e3e;
+}
+
+input, select {
+    width: 100%;
+    max-width: 300px;
+    padding: 12px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.2s;
+}
+
+select {
+    margin-left: 10px;
+    width: auto;
+}
+
+input:focus, select:focus {
+    outline: none;
+    border-color: var(--cuvva-blue);
+}
+
+input::placeholder {
+    color: #a0aec0;
+}
+
+/* Update select styling to remove inline styles */
+#contributionFrequency {
+    margin-left: 10px;
+    width: auto;
+}
+
+button {
+    background-color: var(--cuvva-blue);
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+.results {
+    margin-top: 0;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+th {
+    color: var(--cuvva-dark);
+    font-weight: 600;
+    background-color: transparent;
+}
+
+tbody tr:hover {
+    background-color: #f8f8f8;
+}
+
+.lost-interest {
+    margin-top: 20px;
+    padding: 16px;
+    background: #fff5f5;
+    border-radius: 8px;
+    color: #e53e3e;
+    font-weight: 500;
+}
+
+.comparison-table td {
+    width: 33.33%;
+}
+
+.positive {
+    color: #38a169;
+}
+
+.negative {
+    color: #e53e3e;
+}
+
+.calculator-section {
+    background: white;
+    padding: 24px;
+    border-radius: 12px;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.calculator-section h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 1.25rem;
+    color: var(--cuvva-dark);
+}
+
+/* Move the button styling to be consistent with sections */
+button {
+    margin-bottom: 24px;
+}
+
+.chart-container {
+    margin-top: 32px;
+    padding: 16px;
+    background: #fff;
+    border-radius: 8px;
+    border: 1px solid #eee;
+}
+
+canvas {
+    width: 100% !important;
+    height: 300px !important;
+}
+
+.target-info {
+    padding: 16px;
+    line-height: 1.6;
+}
+
+.target-info p {
+    margin: 8px 0;
+} 
